@@ -1,0 +1,441 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+SisInvCCB
+</name>
+</assembly>
+<members>
+<member name="T:SisInvCCB.My.Resources.Resources">
+<summary>
+  Clase de recurso fuertemente tipado, para buscar cadenas traducidas, etc.
+</summary>
+</member>
+<member name="P:SisInvCCB.My.Resources.Resources.ResourceManager">
+<summary>
+  Devuelve la instancia de ResourceManager almacenada en caché utilizada por esta clase.
+</summary>
+</member>
+<member name="P:SisInvCCB.My.Resources.Resources.Culture">
+<summary>
+  Reemplaza la propiedad CurrentUICulture del subproceso actual para todas las
+  búsquedas de recursos mediante esta clase de recurso fuertemente tipado.
+</summary>
+</member>
+<member name="P:SisInvCCB.My.Resources.Resources.Administradores">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:SisInvCCB.My.Resources.Resources.artic">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:SisInvCCB.My.Resources.Resources.artic1">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:SisInvCCB.My.Resources.Resources.Articulos">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:SisInvCCB.My.Resources.Resources.Articulos1">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:SisInvCCB.My.Resources.Resources.carnescasablanca">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:SisInvCCB.My.Resources.Resources.ccbprincipal">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:SisInvCCB.My.Resources.Resources.ccbprincipal1">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:SisInvCCB.My.Resources.Resources.departamentos_de_una_empresa">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:SisInvCCB.My.Resources.Resources.departamentos_de_una_empresa1">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:SisInvCCB.My.Resources.Resources.descar">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:SisInvCCB.My.Resources.Resources.elementos_para_la_construccin">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:SisInvCCB.My.Resources.Resources.emplea">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:SisInvCCB.My.Resources.Resources.empleados">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:SisInvCCB.My.Resources.Resources.empresa">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:SisInvCCB.My.Resources.Resources.empresa_fondo">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:SisInvCCB.My.Resources.Resources.herramientas_activos">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:SisInvCCB.My.Resources.Resources.mante">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:SisInvCCB.My.Resources.Resources.mante1">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:SisInvCCB.My.Resources.Resources.Marcas">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:SisInvCCB.My.Resources.Resources.mejores_marcas_portatiles">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:SisInvCCB.My.Resources.Resources.mejores_marcas_portatiles1">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:SisInvCCB.My.Resources.Resources.puestos">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:SisInvCCB.My.Resources.Resources.Puestos_de_trabajo">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:SisInvCCB.My.Resources.Resources.Puestos_de_trabajo1">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:SisInvCCB.My.Resources.Resources.tecnico">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:SisInvCCB.My.Resources.Resources.Usuarios">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="T:SisInvCCB.dsData">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:SisInvCCB.dsData.ArticulosDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:SisInvCCB.dsData.CargoActivosDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:SisInvCCB.dsData.DepartamentosDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:SisInvCCB.dsData.DescargoActivosDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:SisInvCCB.dsData.EmpleadosDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:SisInvCCB.dsData.MantenimientosDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:SisInvCCB.dsData.MarcasDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:SisInvCCB.dsData.PuestosDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:SisInvCCB.dsData.UsuariosDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:SisInvCCB.dsData.ArticulosRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:SisInvCCB.dsData.CargoActivosRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:SisInvCCB.dsData.DepartamentosRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:SisInvCCB.dsData.DescargoActivosRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:SisInvCCB.dsData.EmpleadosRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:SisInvCCB.dsData.MantenimientosRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:SisInvCCB.dsData.MarcasRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:SisInvCCB.dsData.PuestosRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:SisInvCCB.dsData.UsuariosRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:SisInvCCB.dsData.ArticulosRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:SisInvCCB.dsData.CargoActivosRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:SisInvCCB.dsData.DepartamentosRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:SisInvCCB.dsData.DescargoActivosRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:SisInvCCB.dsData.EmpleadosRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:SisInvCCB.dsData.MantenimientosRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:SisInvCCB.dsData.MarcasRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:SisInvCCB.dsData.PuestosRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:SisInvCCB.dsData.UsuariosRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:SisInvCCB.dsData1">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:SisInvCCB.dsData1.ArticulosDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:SisInvCCB.dsData1.CargoActivosDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:SisInvCCB.dsData1.DepartamentosDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:SisInvCCB.dsData1.DescargoActivosDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:SisInvCCB.dsData1.EmpleadosDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:SisInvCCB.dsData1.MantenimientosDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:SisInvCCB.dsData1.MarcasDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:SisInvCCB.dsData1.UsuariosDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:SisInvCCB.dsData1.PuestosDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:SisInvCCB.dsData1.ArticulosRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:SisInvCCB.dsData1.CargoActivosRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:SisInvCCB.dsData1.DepartamentosRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:SisInvCCB.dsData1.DescargoActivosRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:SisInvCCB.dsData1.EmpleadosRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:SisInvCCB.dsData1.MantenimientosRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:SisInvCCB.dsData1.MarcasRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:SisInvCCB.dsData1.UsuariosRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:SisInvCCB.dsData1.PuestosRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:SisInvCCB.dsData1.ArticulosRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:SisInvCCB.dsData1.CargoActivosRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:SisInvCCB.dsData1.DepartamentosRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:SisInvCCB.dsData1.DescargoActivosRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:SisInvCCB.dsData1.EmpleadosRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:SisInvCCB.dsData1.MantenimientosRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:SisInvCCB.dsData1.MarcasRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:SisInvCCB.dsData1.UsuariosRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:SisInvCCB.dsData1.PuestosRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+</members>
+</doc>

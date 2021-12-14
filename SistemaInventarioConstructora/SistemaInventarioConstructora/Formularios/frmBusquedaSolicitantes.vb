@@ -1,0 +1,122 @@
+﻿Imports System.Data.SqlClient
+
+Public Class frmBusquedaSolicitantes
+    Private Sub frmBusquedaSolicitantes_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        LlenarDatos()
+        dgvSolicitantes.AutoGenerateColumns = False
+    End Sub
+
+
+    Sub LlenarDatos()
+        Dim sql As String
+        sql = "Select Solicitante.IdSolicitante,  Solicitante.Identidad, Solicitante.NombreSolicitante,
+                 Departamentos.NombreD, Puestos.NombreP 
+                         FROM Departamentos  INNER JOIN Solicitante ON Departamentos.IdDepartamento =  Solicitante.IdDepartamento  
+                                             INNER JOIN Puestos ON  Solicitante.IdPuesto = Puestos.IdPuesto  "
+        Try
+
+
+            Dim tabla As New DataTable
+            adaptador = New SqlDataAdapter(sql, obtenerconexion)
+            adaptador.Fill(tabla)
+            dgvSolicitantes.DataSource = tabla
+
+            lblTotalSolicitantes.Text = tabla.Rows.Count
+
+
+        Catch ex As Exception
+            MsgBox("Se ha mostrado el siguiente Error " + ex.ToString + " Sistema Inventario")
+        End Try
+
+
+    End Sub
+
+
+    Sub BuscarDatos()
+        If rbNombreEmpleado.Checked Then
+
+
+            If txtBuscar.Text = "" Then
+                LlenarDatos()
+            End If
+            adaptador = New SqlDataAdapter("Select Solicitante.IdSolicitante,  Solicitante.Identidad, Solicitante.NombreSolicitante,
+                                            Departamentos.NombreD, Puestos.NombreP  
+                            FROM Departamentos INNER JOIN Solicitante ON Departamentos.IdDepartamento =  Solicitante.IdDepartamento  
+                                                INNER JOIN Puestos ON  Solicitante.IdPuesto = Puestos.IdPuesto WHERE  
+                                                     Solicitante.Nombre Like  '%" & txtBuscar.Text & "%' ", obtenerconexion)
+            tabla.Clear()
+            adaptador.Fill(tabla)
+            If tabla.Rows.Count > 0 Then
+                dgvSolicitantes.DataSource = tabla
+                lblTotalSolicitantes.Text = tabla.Rows.Count
+            Else
+                dgvSolicitantes.DataSource = ""
+            End If
+        End If
+
+        If rbIdentidad.Checked Then
+
+            If txtBuscar.Text = "" Then
+                LlenarDatos()
+            End If
+            adaptador = New SqlDataAdapter("Select Solicitante.IdSolicitante,  Solicitante.Identidad, Solicitante.NombreSolicitante,
+                                            Departamentos.NombreD, Puestos.NombreP  
+                            FROM Departamentos INNER JOIN Solicitante ON Departamentos.IdDepartamento =  Solicitante.IdDepartamento  
+                                                INNER JOIN Puestos ON  Solicitante.IdPuesto = Puestos.IdPuesto WHERE 
+                                             Solicitante.Identidad Like  '%" & txtBuscar.Text & "%' ", obtenerconexion)
+            tabla.Clear()
+            adaptador.Fill(tabla)
+            If tabla.Rows.Count > 0 Then
+                dgvSolicitantes.DataSource = tabla
+                lblTotalSolicitantes.Text = tabla.Rows.Count
+            Else
+                dgvSolicitantes.DataSource = ""
+            End If
+        End If
+
+        If rbDepartamento.Checked Then
+
+            If txtBuscar.Text = "" Then
+                LlenarDatos()
+            End If
+            adaptador = New SqlDataAdapter("Select Solicitante.IdSolicitante,  Solicitante.Identidad, Solicitante.NombreSolicitante,
+                                            Departamentos.NombreD, Puestos.NombreP  
+                                         FROM Departamentos INNER JOIN Solicitante ON Departamentos.IdDepartamento =  Solicitante.IdDepartamento  
+                                                INNER JOIN Puestos ON  Solicitante.IdPuesto = Puestos.IdPuesto
+                                          WHERE  Departamentos.NombreD Like  '%" & txtBuscar.Text & "%' ", obtenerconexion)
+            tabla.Clear()
+            adaptador.Fill(tabla)
+            If tabla.Rows.Count > 0 Then
+                dgvSolicitantes.DataSource = tabla
+                lblTotalSolicitantes.Text = tabla.Rows.Count
+            Else
+                dgvSolicitantes.DataSource = ""
+            End If
+        End If
+
+
+
+
+    End Sub
+
+    Private Sub rbNombreEmpleado_CheckedChanged(sender As Object, e As EventArgs) Handles rbNombreEmpleado.CheckedChanged
+        txtBuscar.Focus()
+    End Sub
+
+    Private Sub rbIdentidad_CheckedChanged(sender As Object, e As EventArgs) Handles rbIdentidad.CheckedChanged
+        txtBuscar.Focus()
+    End Sub
+
+    Private Sub rbDepartamento_CheckedChanged(sender As Object, e As EventArgs) Handles rbDepartamento.CheckedChanged
+        txtBuscar.Focus()
+    End Sub
+
+    Private Sub txtBuscar_TextChanged(sender As Object, e As EventArgs) Handles txtBuscar.TextChanged
+        BuscarDatos()
+        txtBuscar.Focus()
+    End Sub
+
+    Private Sub dgvSolicitantes_CellDoubleClick(sender As Object, e As DataGridViewCellEventArgs) Handles dgvSolicitantes.CellDoubleClick
+
+    End Sub
+End Class
